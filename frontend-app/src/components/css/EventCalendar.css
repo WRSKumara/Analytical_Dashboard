@@ -1,0 +1,224 @@
+/* Container Styling */
+.event-calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  background-color: #f9f9fb;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  max-width: 950px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header Section */
+.calendar-header {
+  width: 100%;
+  background-image: linear-gradient(to right, #34495e, #585858);
+  border-radius: 15px 15px 0 0;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-main-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Calendar Wrapper */
+.calendar-wrapper {
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Calendar Styling */
+.react-calendar {
+  width: 100%;
+  max-width: 700px;
+  border: none;
+  font-size: 1.1rem;
+}
+
+.react-calendar__tile {
+  background-color: #ffffff;
+  border-radius: 12px;
+  color: #333;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  padding: 1rem 0.5rem;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #34495e;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.react-calendar__tile--active {
+  background-color: #6a11cb;
+  color: white;
+  border-radius: 50%;
+  transform: scale(1.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.react-calendar__tile--now {
+  background-color: #f1c40f;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(241, 196, 15, 0.4);
+}
+
+/* Add Event Form */
+.add-event-form {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  border-left: 5px solid #34495e;
+  opacity: 0;
+  animation: slide-in 0.5s ease-out forwards;
+}
+
+.add-event-form h3 {
+  color: #1174cb;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.add-event-form input,
+.add-event-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.add-event-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #34495e;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-event-button:hover {
+  background-color: #6a11cb;
+  transform: translateY(-2px);
+}
+
+/* Event List Title */
+.event-list-title {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  color: #333;
+  text-align: left;
+  width: 100%;
+  font-weight: 700;
+}
+
+/* Event Table */
+.event-table {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.event-table th,
+.event-table td {
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.event-table th {
+  background-color: #6a11cb;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.event-table tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+.event-table tr:hover {
+  background-color: #f1c40f;
+  color: white;
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+.event-table tr td {
+  border-bottom: 1px solid #ecf0f1;
+  color: #34495e;
+}
+
+.event-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Event Icon */
+.event-icon {
+  color: #34495e;
+  margin-right: 8px;
+}
+
+/* Slide-in Animation */
+@keyframes slide-in {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .event-calendar-container {
+      padding: 1rem;
+  }
+
+  .add-event-form,
+  .event-table {
+      width: 100%;
+  }
+
+  .calendar-header {
+      padding: 2rem;
+  }
+
+  .calendar-main-title {
+      font-size: 2rem;
+  }
+}

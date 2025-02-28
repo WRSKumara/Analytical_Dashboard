@@ -1,0 +1,95 @@
+.dashboard-container {
+    padding: 20px;
+  }
+  
+  .student-info {
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .table-section {
+    flex: 1;
+  }
+  
+  .graph-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .module-table,
+  .detailed-marks-table {
+    margin-bottom: 20px;
+  }
+  
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 15px;
+  }
+  
+  .styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .low-marks {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .bar-chart {
+    margin-bottom: 20px;
+  }
+  
+  .pie-charts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .pie-charts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .pie-chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section-4 {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+  }
+  

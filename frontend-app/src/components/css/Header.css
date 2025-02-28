@@ -1,0 +1,57 @@
+.header {
+  background:#34495e; /* Dark Blue Gradient */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* Fix the header at the top */
+  top: 0; /* Align at the very top */
+  left: 0; /* Align to the left edge */
+  width: 100%; /* Full width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  z-index: 1000; /* Ensure it is above other content, adjust as needed */
+}
+
+.header-title {
+  color: #ffffff;
+  font-size: 2rem; /* Increased size for emphasis */
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; /* Creative, modern font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* 3D text effect */
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .header-title {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+@media (max-width: 78px) {
+  .header {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .header-title {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .sign-in-button {
+    right: 50%;
+    top: auto;
+    transform: translateX(50%);
+    padding: 10px 20px;
+  }
+}

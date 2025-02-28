@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start; /* Align content at the top */
+}
+
+.with-sidebar {
+  margin-left: 250px; /* Adjust this to match the sidebar width */
+  width: calc(100% - 250px); /* Adjust the width of main content */
+}
+
+.no-sidebar {
+  width: 100%;
+}
+
+main {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
